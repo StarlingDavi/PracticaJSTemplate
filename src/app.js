@@ -15,6 +15,27 @@ app.set("views", path.join(__dirname, "views"))
 app.get("/", (req, res) => {
     res.render("index")
 })
+app.get("/404", (req, res) => {
+    res.render("404")
+})
+app.get("/about", (req, res) => {
+    res.render("about")
+})
+app.get("/contact", (req, res) => {
+    res.render("contact")
+})
+app.get("/index", (req, res) => {
+    res.render("index")
+})
+app.get("/service", (req, res) => {
+    res.render("service")
+})
+app.get("/team", (req, res) => {
+    res.render("team")
+})
+app.get("/testimonial", (req, res) => {
+    res.render("testimonial")
+})
 
 app.listen(port, () => {
     console.log(
